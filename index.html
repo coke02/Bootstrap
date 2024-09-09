@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbarTest</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <title>Menú desplegable infinito de múltiples niveles basado en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>.dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-1px !important }</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://climatologia.meteochile.gob.cl/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-check-square" aria-hidden="true"></i> Control</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <div class="dropdown-header"> 
+                            <spam><i class="fa fa-check-square" aria-hidden="true"></i> Productos de Control</spam>
+                        </div>
+                        <div class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-check-square" aria-hidden="true"></i>
+                                Diarios
+                                <span></span>
+                                <br>
+                                <span style="font-size: 0.675em;">
+                                    Controles a procesos diarios
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                <a class="dropdown-item" href="#">Complitud de datos</a>
+                                <a class="dropdown-item" href="#">Listado Estaciones con Errores</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Controles definidos</a>
+                            </div>
+                        </div>
+                        <div class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-check-square" aria-hidden="true"></i>
+                                Mensual
+                                <span></span>
+                                <br>
+                                <span style="font-size: 0.675em;">
+                                    Controles a procesos mensuales
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                <a class="dropdown-item" href="#">Complitud de datos</a>
+                                <a class="dropdown-item" href="#">Listado Estaciones con Errores</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Controles definidos</a>
+                            </div>
+                        </div>
+                        <div class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-check-square" aria-hidden="true"></i>
+                                Control de Calidad
+                                <span></span>
+                                <br>
+                                <span style="font-size: 0.675em;">
+                                    Datos Ingresados a SACLIM
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                <a class="dropdown-item" href="#">Complitud de datos</a>
+                                <a class="dropdown-item" href="#">Listado Estaciones con Errores</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Controles definidos</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker" aria-hidden="true"></i> Estaciones</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <div class="dropdown-header"> 
+                            <spam><i class="fa fa-map-marker" aria-hidden="true"></i> Estaciones de la Red</spam>
+                        </div>
+                        <a class="dropdown-item"  href="#">
+                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            Catastro de Estaciones Nacional
+                            <span></span>
+                            <br>
+                            <span style="font-size: 0.675em;">
+                                Buscador en base a criterios
+                            </span>
+                        </a>
+                        <a class="dropdown-item"  href="#">
+                            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                            Grupo de Estaciones
+                            <span></span>
+                            <br>
+                            <span style="font-size: 0.675em;">
+                                conjunto de estaciones definidos
+                            </span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"  href="#">
+                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                            Ficha de la Estación
+                            <span ></span>
+                            <br>
+                            <span style="font-size: 0.675em;">
+                                Metadatos de la estación
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-area-chart" aria-hidden="true"></i> Productos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown03">
+                        <div class="dropdown-header"> 
+                            <spam><i class="fa fa-area-chart" aria-hidden="true"></i> Productos de climaticos</spam>
+                            <hr>
+                        </div>
+                        <div class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                Diarios
+                                <span></span>
+                                <br>
+                                <span style="font-size: 0.675em;">
+                                    Información diaria
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                <a class="dropdown-item" href="#">Complitud de datos</a>
+                                <a class="dropdown-item" href="#">Listado Estaciones con Errores</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Controles definidos</a>
+                            </div>
+                        </div>
+                        <div class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                mensuales
+                                <span></span>
+                                <br>
+                                <span style="font-size: 0.675em;">
+                                    Información mensual
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mensuales 1</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <a class="dropdown-item" href="#">Mensuales1a</a>
+                                        <a class="dropdown-item" href="#">Mensuales1b</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Mensuales1c</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mensuales 2</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <a class="dropdown-item" href="#">Mensuales2a</a>
+                                        <a class="dropdown-item" href="#">Mensuales3b</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Mensuales4c</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mensuales 3</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <a class="dropdown-item" href="#">Mensuales3a</a>
+                                        <a class="dropdown-item" href="#">Mensuales3b</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Mensuales3c</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Texto extra</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://github.com/dallaslu/bootstrap-5-multi-level-dropdown">Idea original</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <h1>Menú desplegable infinito de múltiples niveles basado en Bootstrap</h1>
+                <p>Este es un menú desplegable de múltiples niveles basado en Bootstrap 5.0.2. Puede tener múltiples niveles de menú desplegable. Puede ser un menú desplegable de varios niveles de cualquier nivel de profundidad.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+    (function($bs) {
+        const CLASS_NAME = 'has-child-dropdown-show';
+        $bs.Dropdown.prototype.toggle = function(_orginal) {
+            return function() {
+                document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
+                    e.classList.remove(CLASS_NAME);
+                });
+                let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+                for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+                    dd.classList.add(CLASS_NAME);
+                }
+                return _orginal.call(this);
+            }
+        }($bs.Dropdown.prototype.toggle);
+
+        document.querySelectorAll('.dropdown').forEach(function(dd) {
+            dd.addEventListener('hide.bs.dropdown', function(e) {
+                if (this.classList.contains(CLASS_NAME)) {
+                    this.classList.remove(CLASS_NAME);
+                    e.preventDefault();
+                }
+                e.stopPropagation(); // do not need pop in multi level mode
+            });
+        });
+
+        // for hover
+        document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
+            dd.addEventListener('mouseenter', function(e) {
+                let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                if (!toggle.classList.contains('show')) {
+                    $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                    dd.classList.add(CLASS_NAME);
+                    $bs.Dropdown.clearMenus();
+                }
+            });
+            dd.addEventListener('mouseleave', function(e) {
+                let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                if (toggle.classList.contains('show')) {
+                    $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                }
+            });
+        });
+    })(bootstrap);
+
+    </script>
+</body>
+</html>
